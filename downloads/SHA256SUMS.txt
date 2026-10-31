@@ -1,0 +1,2 @@
+6aeddd50e24a8b4d6d226fe061bdecc4cd47ce9d74bcf75a1eb919304ee4a370  youtube-auto-skip-1.4.1-community.zip
+bf6eb9dbe325290825ab3be49d1d71099367ae5d61896da403b95909c2957d0b  youtube-auto-skip-1.4.1-store.zip
