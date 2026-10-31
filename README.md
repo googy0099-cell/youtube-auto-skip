@@ -22,4 +22,4 @@ No npm install required. Run `node --test tests/*.test.cjs`. Build ZIPs with `py
 
 Please report browser version, expected behavior and the error or detector status. Remove account details, private links and unrelated tabs from screenshots. Financial support is optional; no donation account has been connected yet.
 
-Independent project. Not affiliated with YouTube or Google. License selection pending before publication.
+Independent project. Not affiliated with YouTube or Google. Licensed under the [MIT License](LICENSE): use, modify and redistribute while retaining the copyright and license notice.

@@ -34,6 +34,8 @@ payload = {name:(SOURCE/name).read_bytes() for name in [
     'content.js','background.js','worker.js','site-config.js','sites-worker.js',
     'custom-content.js','skip-detector.js','manage.html','manage.css','manage.js'
 ]}
+if (ROOT/'LICENSE').exists():
+    payload['LICENSE']=(ROOT/'LICENSE').read_bytes()
 manifest = json.loads((SOURCE/'manifest.json').read_text())
 manifest['icons'] = {str(n):f'icons/icon{n}.png' for n in [16,32,48,128]}
 payload['manifest.json'] = (json.dumps(manifest,indent=2)+'\n').encode()
@@ -54,6 +56,8 @@ store = OUT/f'youtube-auto-skip-{VERSION}-store.zip'
 community = OUT/f'youtube-auto-skip-{VERSION}-community.zip'
 write_zip(store,payload)
 community_files={f'youtube-auto-skip/{name}':data for name,data in payload.items()}
+if (ROOT/'LICENSE').exists():
+    community_files['LICENSE']=(ROOT/'LICENSE').read_bytes()
 community_files['README.md']=(ROOT/'distribution'/'INSTALL-EN.md').read_bytes()
 community_files['youtube-auto-skip/README.md']=(ROOT/'distribution'/'INSTALL-EN.md').read_bytes()
 for name in ['INSTALL-EN.md','INSTALL-TH.md','PRIVACY-EN.md','PRIVACY.md','SUPPORTED-SITES.md']:
