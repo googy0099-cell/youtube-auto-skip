@@ -1,0 +1,11 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Auto Skip</title><link rel="stylesheet" href="manage.css"><script src="site-config.js" defer></script><script src="manage.js" defer></script></head>
+<body><main>
+<header><h1>Auto Skip</h1><span class="version">1.4.1</span></header>
+<div class="builtin"><strong>YouTube</strong><span class="badge">Always on</span></div>
+<section><form id="add-form"><label for="website">Add a website</label><div class="row"><input id="website" type="text" placeholder="example.com" autocomplete="off" spellcheck="false" required><button type="submit">Add</button></div></form><button id="add-current" class="link" disabled>Add current website</button><p class="hint">All-website access is needed for embedded players. Detection runs only on your saved websites.</p></section>
+<div id="notice" role="status" aria-live="polite"></div>
+<section><h2>Your websites <span id="site-count" class="count">0</span></h2><div id="sites"></div></section>
+<section id="current-tools" hidden><details><summary>Tools for this page</summary><p id="current-site" class="address"></p><button id="check-status" class="secondary">Check detection</button><button id="pick-button" class="secondary">Choose a Skip button</button><p class="hint">Select the actual Skip Ad control once. Esc cancels.</p><details><summary>Advanced player access</summary><button id="detect-players" class="secondary">Find embedded players</button><div id="players"></div></details></details></section>
+<footer><details><summary>How it works &amp; access</summary><p>Finds Skip Ad labels and controls in added websites and their embedded players. Chrome requests all HTTP/HTTPS website access once. Clicking stays limited to your saved websites. Some players block scripted clicks; Check detection reports unconfirmed results. Ads without a Skip control cannot be skipped.</p></details><button id="full-manager" hidden>Back to website</button></footer>
+</main></body></html>

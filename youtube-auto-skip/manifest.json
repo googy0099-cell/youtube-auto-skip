@@ -1,0 +1,40 @@
+{
+  "manifest_version": 3,
+  "name": "YouTube Auto Skip",
+  "version": "1.4.1",
+  "minimum_chrome_version": "119",
+  "description": "Automatically skips available YouTube ads. Add and manage your own websites with optional site access.",
+  "permissions": [
+    "debugger",
+    "storage",
+    "scripting",
+    "activeTab"
+  ],
+  "optional_host_permissions": [
+    "https://*/*",
+    "http://*/*"
+  ],
+  "background": {
+    "service_worker": "worker.js"
+  },
+  "action": {
+    "default_title": "YouTube Auto Skip \u2014 Manage websites",
+    "default_popup": "manage.html"
+  },
+  "options_ui": {
+    "page": "manage.html",
+    "open_in_tab": true
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "https://www.youtube.com/*",
+        "https://m.youtube.com/*"
+      ],
+      "js": [
+        "content.js"
+      ],
+      "run_at": "document_idle"
+    }
+  ]
+}
